@@ -255,17 +255,22 @@ if __name__ == "__main__":
     
     # Exemplo do uso do S-AES com uma chave e plaintext fornecidos
     chave = 0b1010011100111011  # 0xA73B
-    plainText = 0b0110111101101011  # "ok" em ASCII (0x6F6B)
+
+    # Comente esse trecho para usar valores inseridos
     resultadoEsperado = 0b0000011100111000  # 0x0738
+    plainText = 0b0110111101101011  # "ok" em ASCII (0x6F6B)
+    
+    # Descomente esse trecho para inserir qualquer valor de entrada
+    # texto = input(f"Digite o texto em claro (precisa ter número par de caracteres): ")
+    # plainText = int.from_bytes(texto.encode('utf-8'), 'big')
 
     # Executa a criptografia chamando a função principal
     cipherText = saes(plainText, chave)
     
     # Mostra os resultados
     print("            Resultados:")
-    print(f"Resultado esperado: {resultadoEsperado:016b}")
+    print(f"Resultado esperado: {resultadoEsperado:016b}")    # Caso use um valor inputado é necessário comentar essa linha
     print(f"Texto cifrado:      {cipherText:016b}")
-    
     
     # Formatação da saída
     cifraBytes = cipherText.to_bytes(2, byteorder='big')
