@@ -1,0 +1,79 @@
+# Saídas Modo de operação ECB do S-AES
+
+Digite a chave (4 bits hexadecimais): A73B  
+Digite o texto em claro (a quantidade de caracteres precisa ser par): okokok
+------------------------------------
+          Saídas Intermediárias:
+Chaves de rodada: ['a73b', '1c27', '7651']
+Texto plano em matriz: [[6, 6], [15, 11]]
+Estado após AddRoundKey inicial: [[12, 5], [8, 0]]
+------------------------------------
+-> Rodada 1:
+Estado após SubNibbles: [[12, 1], [6, 9]]
+Estado após ShiftRows: [[12, 1], [9, 6]]
+Estado após MixColumns: [[14, 10], [12, 2]]
+Estado após AddRoundKey: [[15, 8], [0, 5]]
+------------------------------------
+-> Rodada 2:
+Estado após SubNibbles: [[7, 6], [9, 1]]
+Estado após ShiftRows: [[7, 6], [1, 9]]
+Estado após AddRoundKey: [[0, 3], [7, 8]]
+------------------------------------
+Texto cifrado cifrado: 0000011100111000
+------------------------------------
+------------------------------------
+          Saídas Intermediárias:
+Chaves de rodada: ['a73b', '1c27', '7651']
+Texto plano em matriz: [[6, 6], [15, 11]]
+Estado após AddRoundKey inicial: [[12, 5], [8, 0]]
+------------------------------------
+-> Rodada 1:
+Estado após SubNibbles: [[12, 1], [6, 9]]
+Estado após ShiftRows: [[12, 1], [9, 6]]
+Estado após MixColumns: [[14, 10], [12, 2]]
+Estado após AddRoundKey: [[15, 8], [0, 5]]
+------------------------------------
+-> Rodada 2:
+Estado após SubNibbles: [[7, 6], [9, 1]]
+Estado após ShiftRows: [[7, 6], [1, 9]]
+Estado após AddRoundKey: [[0, 3], [7, 8]]
+------------------------------------
+Texto cifrado cifrado: 0000011100111000
+------------------------------------
+------------------------------------
+          Saídas Intermediárias:
+Chaves de rodada: ['a73b', '1c27', '7651']
+Texto plano em matriz: [[6, 6], [15, 11]]
+Estado após AddRoundKey inicial: [[12, 5], [8, 0]]
+------------------------------------
+-> Rodada 1:
+Estado após SubNibbles: [[12, 1], [6, 9]]
+Estado após ShiftRows: [[12, 1], [9, 6]]
+Estado após MixColumns: [[14, 10], [12, 2]]
+Estado após AddRoundKey: [[15, 8], [0, 5]]
+------------------------------------
+-> Rodada 2:
+Estado após SubNibbles: [[7, 6], [9, 1]]
+Estado após ShiftRows: [[7, 6], [1, 9]]
+Estado após AddRoundKey: [[0, 3], [7, 8]]
+------------------------------------
+Texto cifrado cifrado: 0000011100111000
+------------------------------------
+
+-> Texto cifrado com Modo de Operação ECB:
+Lista de blocos cifrados: ['0000011100111000', '0000011100111000', '0000011100111000']
+
+Formatação de cada elemento da lista de blocos cifrados:
+
+Texto cifrado bináro: 0000011100111000
+Texto cifrado Base64: Bzg=
+Texto cifrado em Hexadecimal: 0738
+------------------------------------
+Texto cifrado bináro: 0000011100111000
+Texto cifrado Base64: Bzg=
+Texto cifrado em Hexadecimal: 0738
+------------------------------------
+Texto cifrado bináro: 0000011100111000
+Texto cifrado Base64: Bzg=
+Texto cifrado em Hexadecimal: 0738
+------------------------------------
