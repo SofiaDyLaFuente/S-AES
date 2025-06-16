@@ -1,0 +1,18 @@
+# Saídas AES em base64
+
+Insira aqui o plain Text: Texto em plain text para teste.
+
+Modo de operação: ECB
+Texto cifrado ECB: gBVD9YGC8PNd0xrRO0ZvCjp2JtXcBTTqIwHfqXGoYbA= (Tempo: 0.004287s)
+
+Modo de operação: CBC
+Texto cifrado CBC: 83wRjCSQ97JviVVhvYDuap7IL+D1H5erAGyPPtt8Sao= (Tempo: 0.005418s)
+
+Modo de operação CFB
+Texto cifrado CFB: Rif0PZIjZvq+gudnuZ9KSpkZWAAX00I8UrMN2GhaYvU= (Tempo: 0.002765s)
+
+Modo de operação OFB
+Texto cifrado OFB: Ro18r1n7gWqdP5wpx3RBPxyws40PGyrsk/iOeskGcqU= (Tempo: 0.002124s)
+
+Modo de operação CTR
+Texto cifrado CTR: WzkgZwP2BBQfTE+bytkoMDI3CdDunjT/X2at+iRqJlI= (Tempo: 0.004647s)
